@@ -94,6 +94,7 @@ export const deleteNotesByIdController = async (req, res, next) => {
       message: "Note deleted successfully",
     });
   } catch (error) {
+    //handele the error
     next(error);
   }
 };
